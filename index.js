@@ -4,6 +4,7 @@
 var varCounter = 0;
 var myVar;
 var check = true;
+var max=45;
 
 $(document).ready(function () {
 
@@ -13,6 +14,32 @@ $(document).ready(function () {
     varCounter=0;
     myStartFunction();
     
+  
+  });
+
+  $("#num45").click(function(){
+  
+    document.getElementById("numchange").innerHTML = "45";
+    max =45;
+
+    if(max === 55)
+    {
+      document.getElementById("NumberRand_6").innerHTML = number;
+    }
+    else
+    {
+      document.getElementById("NumberRand_6").innerHTML = "";
+    }
+  
+  });
+
+  $("#num55").click(function(){
+  
+    document.getElementById("numchange").innerHTML = "55";
+    max =55;
+    number = getRndInteger();
+    document.getElementById("NumberRand_6").innerHTML = number;
+   
   
   });
 
@@ -60,7 +87,16 @@ function RandomNumBer() {
   number = getRndInteger();
   document.getElementById("NumberRand_5").innerHTML = number;
   number = getRndInteger();
-  document.getElementById("NumberRand_6").innerHTML = number;
+
+  if(max === 55)
+  {
+    document.getElementById("NumberRand_6").innerHTML = number;
+  }
+  else
+  {
+    document.getElementById("NumberRand_6").innerHTML = "";
+  }
+  
 
 
 
@@ -70,7 +106,7 @@ function RandomNumBer() {
 
 
 function getRndInteger() {
-  let number =  Math.floor(Math.random() * (45 - 0 + 1) ) + 0;
+  let number =  Math.floor(Math.random() * (max - 0 + 1) ) + 0;
   if(number.toString().length<=1)
   {
     number  =  "0"+number;
