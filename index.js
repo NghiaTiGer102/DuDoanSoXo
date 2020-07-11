@@ -78,7 +78,7 @@ function RandomNumBer() {
   number = getRndInteger();
   document.getElementById("NumberRand_5").innerHTML = number;
   number = getRndInteger();
-  document.getElementById("NumberRand_6").innerHTML = "";
+  document.getElementById("NumberRand_6").innerHTML = number;
   
   
 
