@@ -22,14 +22,6 @@ $(document).ready(function () {
     document.getElementById("numchange").innerHTML = "45";
     max =45;
 
-    if(max === 55)
-    {
-      document.getElementById("NumberRand_6").innerHTML = number;
-    }
-    else
-    {
-      document.getElementById("NumberRand_6").innerHTML = "";
-    }
   
   });
 
@@ -37,8 +29,7 @@ $(document).ready(function () {
   
     document.getElementById("numchange").innerHTML = "55";
     max =55;
-    number = getRndInteger();
-    document.getElementById("NumberRand_6").innerHTML = number;
+    
    
   
   });
@@ -87,15 +78,8 @@ function RandomNumBer() {
   number = getRndInteger();
   document.getElementById("NumberRand_5").innerHTML = number;
   number = getRndInteger();
-
-  if(max === 55)
-  {
-    document.getElementById("NumberRand_6").innerHTML = number;
-  }
-  else
-  {
-    document.getElementById("NumberRand_6").innerHTML = "";
-  }
+  document.getElementById("NumberRand_6").innerHTML = "";
+  
   
 
 
