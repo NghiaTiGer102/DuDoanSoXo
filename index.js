@@ -90,7 +90,7 @@ function RandomNumBer() {
 
 
 function getRndInteger() {
-  let number =  Math.floor(Math.random() * (max - 0 + 1) ) + 0;
+  let number =  Math.floor(Math.random() * (max - 1 + 1) ) + 1;
   if(number.toString().length<=1)
   {
     number  =  "0"+number;
